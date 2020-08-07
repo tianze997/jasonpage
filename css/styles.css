@@ -1,0 +1,200 @@
+html,body
+{
+  padding:0;
+  margin:0;
+  height:100vh;
+  width:100vw;
+  transition: background-color 0.5s;
+}
+#navigator{
+  box-shadow:0px 0px 5px black;
+  top:0;
+  position:fixed;
+  height:50px;
+  width:100%;
+  padding:0 10px;
+  background-color:#212121;
+  box-sizing:border-box;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:0.5s;
+}
+#navigator ul{
+  left:50px;
+  align-items:center;
+  position:relative;
+  padding:0;
+  margin:0 10px 50px 10px;
+  display:flex;
+  bottom:5px;
+}
+#navigator ul li{
+  list-style:none;
+}
+.headNavMenu{
+  align-items:center;
+  color:#fff;
+  padding:0 10px;
+  margin:0 10px 0 10px;
+  font-size:1.0em;
+  background-color:transparent;
+  outline:none;
+  border:solid 0px transparent;
+  text-decoration:none;/**去除下划线**/
+}
+.headNavMenu:hover{
+  background-color:LightBlue;
+  color:#000;
+}
+
+#brand{
+  text-decoration:none;
+  font-size:2.0em;
+  font-weight:bold;
+}
+#sidenav-menu{
+  overflow-x:hidden;
+  z-index:1;
+  box-shadow:1px 2px 5px black;
+  position:fixed;
+  display:block;
+  height:100%;
+  width:0;
+  left:0;
+  overflow:hidden;
+  background-color:#eee;
+  height:100%;
+  top:0;
+  margin:0;
+  bottom:0;
+  transition:0.5s;
+}
+
+.sidemenu-content{
+  outline:none;
+  width:auto;
+  display:block;
+  margin:0px 20px 20px 50px;
+  background-color:transparent;
+  border:none;
+  color:Black;
+  font-size:18px;
+}
+#menu{
+  display:block;
+  position:relative;
+  transition:0.9s;
+}
+sidemenu-content:hover{
+  transform:translatex(0px);
+}
+.textcontent{
+  padding:0;
+  margin:0;
+}
+.textcontent li{
+  list-style:none;
+}
+.textcontent li a{
+  overflow-x:hidden;
+  display:block;
+  
+  font-size:1.0em;
+  text-decoration:none;/**去除下划线**/
+  padding: 0px 0px 8px 32px;
+  transition: 0.3s;
+  
+}
+.sidemenu-content:hover{
+    color:#999;
+}
+
+  #menu-container{
+	border:solid 0px transparent;
+	outline:none;
+	text-align:center;
+	background-color:transparent;
+	border-radius:0px;
+	height:28px;
+	width:35px;
+  }
+  .toggle-button{
+	width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  
+.sidemenu-container{
+  position:relative;
+	background-color:transparent;
+	top:20px;
+	left:15px;
+	height:28px;
+	font-size:21px;
+	display:block;
+	font-weight:bold;
+}
+.button-container{
+  list-style:none;
+  display:block;
+  position:relative-bottom;
+  margin-top:30px;
+}
+#buttonCustom1{
+  outline:none;
+  width:150px;
+  height:30px;
+  background-color:#2196f3;
+  border:solid 2px #2196f3;
+  border-radius:20px;
+  margin:5px 10px 5px 10px;
+  color:#fff;
+  }
+  #buttonCustom2{outline:none;
+  width:150px;
+  height:30px;
+  background-color:#fff;
+  border:solid 2px #2196f3;
+  border-radius:20px;
+  margin:5px 10px 5px 10px;
+  color:#2196f3;
+  }
+  #buttonCustom1:hover{
+	box-shadow:1px 1px 10px 1px #2196f3;
+  }
+  #buttonCustom2:hover{
+	box-shadow:1px 1px 10px 1px #2196f3;
+  }
+ .footer{
+   text-align:center;
+   font-size:11px;
+   display:block;
+   margin-top:50px;
+ }
+ .homepage{
+   background-color:Blue;
+   text-align:center;
+   display:block;
+   width:100vw;
+   height:100vh;
+ }
+ .productpage{
+   background-color:Cyan;
+   color:Blue;
+   text-align:center;
+   margin-top:150px;
+   display:none;
+   width:100vw;
+   height:100vh;
+ }
+ .aboutpage{
+   background-color:Coral;
+   color:Blue;
+   text-align:center;
+   margin-top:150px;
+   display:none;
+   width:100vw;
+   height:100vh;
+ }//
