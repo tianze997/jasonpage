@@ -1,37 +1,89 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/tianze997/jasonpage/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tianze997/jasonpage/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<meta name="theme-color" content="#212121">
+    <link href="css/styles.css" rel="stylesheet">
+	<script src="js/scripts.js"></script>
+	<title>箫 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+  </head>
+  <body>
+	<nav id="navigator">
+	  <div id="menu-container" class="mMenu">
+		<a href="javascript:void(0)"
+		  class="closebtn"></a>
+		<div class="toggle-button" onclick="mOpen()">
+		  <div class="toggle-button"></div>
+		  <div class="toggle-button"></div>
+		  <div class="toggle-button"></div>
+		  </div><!------>
+		<ul>
+		  <li><input class="headNavMenu" type="button" value="首页" onclick=Tab(1)></li>
+		  <li><input class="headNavMenu" type="button" value="新闻" onclick=Tab(2)></li>
+		  <li><input class="headNavMenu" type="button" value="关于" onclick=Tab(3)></li>
+		</ul>
+		  </div>
+	</nav>
+	<nav id="sidenav-menu">
+	  <div class="sidemenu-container" onclick="mClose()">
+		╳
+	  </div>
+	  <div id="mcontent">
+		<ul class="textcontent">
+		  <li style="margin-top:80px">
+		  <li><a href="#" target="_parent">
+			  <input class="sidemenu-content" type="button" value="友链" onclick="loadnewpage(1)">
+			</a></li>
+		  <li><a href="#" target="_parent">
+			  <input class="sidemenu-content" type="button" value="友链" onclick="loadnewpage(2)">
+			</a></li>
+		  <li><a href="#" target="_parent">
+			  <input class="sidemenu-content" type="button" value="友链" onclick="loadnewpage(3)">
+			</a></li>
+		  <li><a href="#" target="_parent">
+			  <input class="sidemenu-content" type="button" value="友链" onclick="loadnewpage(4)">
+			</a>
+			</li>
+		  <hr style="color:#2196f3;"/>
+		  <ul>
+			<li><span class="post-view-count">Read(46)</span><text> </text></li>
+			<li> <span class="post-comment-count">Commitment(0)</span><text> </text></li>
+			 <li> <span class="post-digg-count">Tui(0)</span><text> </text></li>
+		  </ul>
+		</ul>
+		<!--<ul class="button-container">
+		  <li><input id="buttonCustom1" type="button" value="登 录"></li>
+		  <li><input id="buttonCustom2" type="button"  value="注 册"></li>
+		</ul>-->
+	  </div>
+	</nav>
+	  <div id="page1" class="homepage">
+		
+		  
+		  
+		  
+	  </div>
+	  <div id="page2" class="productpage" style="display:none">
+		
+		
+		
+		
+		
+	  </div>
+	<div id="page3" class="aboutpage" style="display:none">
+		
+	  
+	  
+	  
+	  </div>
+	<div class="footer">
+<span>Copyright &copy;2020ytz All Reserved</span>
+<span></span>
+</div>
+  </body>
+</html>		
