@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-  <html lang="zh-cn">
+  <html lang="en">
 	<meta charset="utf-8">
 	<meta name="viewport" content="height=device-height,width=device-width, initial-scale=1">
-	  <meta name="theme-color" content="#212121">
+	<meta name="theme-color" content="#0d47a1">
 	<head>
   <style>
 	html,body{
@@ -21,26 +21,33 @@
   height:10%;
   width:100%;
   padding:0 10px;
-  background-color:#212121;
+  background-color:transparent;
   box-sizing:border-box;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  <!---->
 	}
 	
+	#headnav:hover{
+	background-color:white;
+	}
+	
+	
 	#mytitle{
+	font-weight:bold;
 	color:#fff;
-	font-size:25px;
-	padding:20px 20px 20px 50px;
+	font-size:20px;
+	padding:20px 20px 20px 20px;
 	text-align:center;
 	}
 	
 	#main{
 	height:60%;
   width:100%;
-	display:block;
+  position:fixed;
 	text-align:center;
-	background-color:#29b6f6;
+	background-color:transparent;
 	}
 	
 	#myarticle
@@ -63,11 +70,12 @@
 	margin:20px 20px 20px 20px;
 	padding:10px 10px 10px 10px;
 	}
-	.footer_btn:hover{
+	<!--.footer_btn:hover{
 	background-color: #01579b;
 	color:#e0e0e0;
-	}
+	}-->
 	.footer{
+	position:float;
 	//box-shadow:0px 10px 30px 10px #000;
 	height:30%;
   width:100%;
@@ -82,26 +90,22 @@
   </style>
   <script>
 	function getdeviceid(){
-	document.getElementById("download", function(){
-	function device(name){
-     return plus.device.name;
-	 }
-	});
-	alert(""+device('imei'));
+	document.getElementById("download");
+	alert("Hello!");
 }
   </script>
 	  
 	  <title>下载中心 - 欢迎下载</title>
 	</head>
 	<body>
+	  <img id="backgroundpicture" src="img/splash4.jpg" style="height:90%;width:100%;"/>
 	  <nav id="headnav">
 		<div>
-		  <span id="mytitle">下载中心</span>
+		  <span id="mytitle">Thanks For Downloading!</span>
 		  
 		</div>
 	  </nav>
 	  <div style="display:block;" id="main">
-		<input type="image" src="#" alt="#"/>
 	  </div>
 	  <div></div>
 	  <div class="footer">
