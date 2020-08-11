@@ -1,124 +1,146 @@
 <!DOCTYPE html>
-  <html lang="en">
-	<meta charset="utf-8">
-	<meta name="viewport" content="height=device-height,width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#0d47a1">
-	<head>
-  <style>
-	html,body{
-	padding:0;
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d47a1">
+  <head>
+<style>
+  html,body{
+  padding:0;
   margin:0;
   height:100vh;
   width:100vw;
 	}
-	h4{
-	font-size:30px;
-	}
-	#headnav{
-	//box-shadow:0px 0px 30px 0px #000;
+h4{
+  font-size:28px;
+}
+#headnav{
+  z-index:100;
   top:0;
   position:fixed;
   height:10%;
   width:100%;
-  padding:0 10px;
-  background-color:transparent;
+  padding:15px 5px 10px 10px;
   box-sizing:border-box;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  <!---->
-	}
-	
-	#headnav:hover{
-	background-color:white;
-	}
-	
-	
-	#mytitle{
+  color:#fff;
+  background:transparent;
+}
+#myIcon{
+outline:none;
+width:100px;
+height:100px;
+background:white;
+box-shadow:5px 5px 20px 5px #fff;
+border-radius:10%;
+border:solid 1px #fff;
+}
+
+#download_button
+{
+width:200px;
+height:40px;
+background:#2196f3;
+border-radius:50px;
+color:#fff;
+padding:2px 2px 2px 2px;
+font-size:30px;
+border:solid 1px #fff;
+margin-top:50px;
+outline:none;
+}
+
+#mytitle{
 	font-weight:bold;
-	color:#fff;
-	font-size:20px;
-	padding:20px 20px 20px 20px;
-	text-align:center;
-	}
-	
-	#main{
-	height:60%;
-  width:100%;
-  position:fixed;
-	text-align:center;
-	background-color:transparent;
-	}
-	
-	#myarticle
-	{
-	color:#000;
-	font-size:40px;
-	margin:25px 25px 25px 50px;
-	text-align:center;
-	}
-	.footer_btn{
 	font-size:21px;
-	color:white;
-	height:45px;
-	width:25%;
-	border-radius:10px;
-	background-color:#2196f3;
-	box-shadow:0 2px 2px 1px #fff;
-	outline:none;
-	border:solid 1px #fff;
-	margin:20px 20px 20px 20px;
-	padding:10px 10px 10px 10px;
+	padding:0;
+	
 	}
-	<!--.footer_btn:hover{
-	background-color: #01579b;
-	color:#e0e0e0;
-	}-->
-	.footer{
-	position:float;
-	//box-shadow:0px 10px 30px 10px #000;
-	height:30%;
-  width:100%;
-	display:block;
-	text-align:center;
+	
+.container{
+	position:relative;
 	}
-	.footer #operatorbar{
+#bgpicture{
 	width:100%;
-	display:flex;
-	text-align:center;
+	height:100%;
+	opacity:1;
 	}
-  </style>
-  <script>
+.main{
+z-index:0;
+	position: absolute;
+	opacity:0.8;
+    left: 0;
+	top:20%;
+	bottom:0;
+	height:50%;
+    width: 100%;
+    text-align: center;
+	background:transparent;
+	}
+.footer{
+top:100px;
+   top:80%;
+    bottom:5%;
+    position: absolute;
+	opacity:0.5;
+    left: 0;
+	height:20%;
+    width: 100%;
+    text-align: center;
+	background:#fff;
+	display:block;
+}
+.intro-content{
+   font-size:16px;
+   color:black;
+   opacity:1;
+}
+
+
+a{
+text-decoration:none;
+color:black;
+}
+</style>
+<script>
 	function getdeviceid(){
 	document.getElementById("download");
 	alert("Hello!");
 }
-  </script>
-	  
-	  <title>下载中心 - 欢迎下载</title>
-	</head>
-	<body>
-	  <img id="backgroundpicture" src="img/splash4.jpg" style="height:90%;width:100%;"/>
+var Y=function getY(){
+var date=new Date();
+var year=date.getFullYear();
+return year;
+};
+</script>
+	<title>下载中心 - 欢迎下载</title>
+  </head>
+  <body>
+	<div class="container">
 	  <nav id="headnav">
 		<div>
-		  <span id="mytitle">Thanks For Downloading!</span>
-		  
+		  <h4>Thanks for downloading!</h4>
 		</div>
 	  </nav>
-	  <div style="display:block;" id="main">
-	  </div>
-	  <div></div>
-	  <div class="footer">
-		<div id="operatorbar">
-		  <input type="button" id="download" class="footer_btn" value="下载" onclick="getdeviceid()"/>
-		</div>
-		<div id="footer_information">
-		  <div class="links">
+	  <div>
+		<img id="bgpicture" src="img/splash4.jpg"/>
+		<div>
+		  <div class="main">
+			<img type="image" id="myIcon" src="img/splash4.jpg"/>
+			  <div>
+			<input type="button" id="download_button" value="立刻下载"/>
+			  </div>
 		  </div>
-		  <div>
-		  </div>
-		  <div id="bottom_copyright"><span style="font-size:10px;">Copyright &copy; 2020 ytz All Reserved.</span></div>
+		  <div class="footer">
+			<span class="intro-content"><a href="" target="_blank">关于</a>&nbsp;|&nbsp;<a href="" target="_blank">联系我们</a>&nbsp;|&nbsp;<a href="" target="_blank">反馈问题</a>&nbsp;|&nbsp;<a href="" target="_blank">更多</a><br/></span>
+			<!--<span class="intro-content">xxICP备xxxxxxx 号<br/></span>-->
+			<span class="intro-content">Copyright &copy;<a href="">2020 tianze997</a> All Reserved.<br/></span>
+			<span class="intro-content">Powered by <a href="https://github.com/" target="_blank">Github.</a><br/></span>
+			</div>
 		</div>
 	  </div>
-	</body>
-  </html>
+	</div><!--container  end-->
+  </body>
+</html>
